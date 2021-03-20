@@ -1,0 +1,185 @@
+/* card visual */
+.card {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  height: 160px;
+  margin: 15px 25%;
+  width: 120px;
+  padding: 3px;
+  display: inline-block;
+  font-family: 'Lato';
+  font-weight: lighter;
+  position: absolute;
+}
+
+.cover {
+  background-color: #ef4f4f;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: block;
+  height: 160px;
+  margin: 15px 25%;
+  width: 120px;
+  padding: 3px;
+  display: inline-block;
+  /* left: 100px; */
+  position: absolute;
+  /* top: 54px; */
+}
+
+.top-card {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 20px;
+  left: 2px;
+  top: 10px;
+  /* position: absolute; */
+}
+
+.middle-card {
+  text-align: center;
+  font-size: 3rem;
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  /* position: absolute; */
+}
+
+.bottom-card {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 20px;
+  right: 2px;
+  bottom: 10px;
+  transform: rotate(-180deg);
+  position: absolute;
+}
+
+/*pseudo elements for changing content*/
+.hearts, .suit::after {
+  content: '\2665';
+}
+
+.diamonds, .suit::after {
+  content: '\2666';
+}
+
+.clubs, .suit::after {
+  content: '\2663';
+}
+
+.spades, .suit::after {
+  content: '\2660';
+}
+
+.spades, .clubs {
+  color: black;
+}
+
+.diamonds, .hearts {
+  color: red;
+}
+
+/* styling general */
+.navbar-brand {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.resultslose {
+  font-size: 2rem;
+  color: #ef4f4f;
+  text-align: center;
+  font-family: Lato, serif;
+  font-weight: bold;
+}
+
+.resultswin {
+  font-size: 2rem;
+  color: yellow;
+  text-align: center;
+  font-family: Lato, serif;
+  font-weight: bold;
+}
+
+.resultsdraw {
+  font-size: 2rem;
+  color: lightgreen;
+  text-align: center;
+  font-family: Lato, serif;
+  font-weight: bold;
+}
+
+.twentyone {
+  font-size: 2.5rem;
+  color: pink;
+  text-align: center;
+  font-family: lato;
+  font-weight: bold;
+}
+
+#playbuttons {
+  /* padding-left: 100px; */
+  padding-bottom: 15px;
+}
+
+#playbuttons2 {
+  /* padding-left: 100px; */
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+#dealingtable {
+  padding-left: 50px;
+  font-family: sans-serif;
+  color: white;
+}
+
+.navbar:hover {
+  background-color: grey;
+  color: black;
+}
+
+.navbar {
+  padding-left: 50px;
+  font-family: Lato;
+  background-color: #ef4f4f;
+  margin-bottom: 20px;
+}
+
+#background {
+  background-color: green;
+}
+
+.footer-background {
+  background-color: #ef4f4f;
+  padding-left: 50px;
+}
+
+.hit {
+  background-color: #ef4f4f;
+  color: white;
+}
+
+.message {
+  color: white;
+  font-family: lato;
+}
+
+.jack {
+  color: white;
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
